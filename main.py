@@ -3,7 +3,7 @@ import time
 import keyboard
 import win32api
 import win32con
-from pyfiglet import Figlet
+# from pyfiglet import Figlet
 
 
 # while keyboard.is_pressed("q") == False:
@@ -11,9 +11,18 @@ from pyfiglet import Figlet
 #     time.sleep(0.01)
 #     pg.click()
 
-f = Figlet(font='slant')
+# f = Figlet(font='slant')
 
-print(f.renderText('AutoClicker'))
+# print(f.renderText('AutoClicker'))
+
+print('''
+      ___         __        _________      __
+   /   | __  __/ /_____  / ____/ (_)____/ /_____  _____
+  / /| |/ / / / __/ __ \/ /   / / / ___/ //_/ _ \/ ___/
+ / ___ / /_/ / /_/ /_/ / /___/ / / /__/ ,< /  __/ /
+/_/  |_\__,_/\__/\____/\____/_/_/\___/_/|_|\___/_/
+
+      ''')
 
 def click(duration: float, interval: float):
   win32api.mouse_event(win32con.MOUSEEVENTF_LEFTDOWN,0,0)

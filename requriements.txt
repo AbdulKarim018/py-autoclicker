@@ -1,0 +1,5 @@
+pyautogui
+pillow
+keyboard
+pywin32
+pyscreeze
